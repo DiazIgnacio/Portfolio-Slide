@@ -1,0 +1,58 @@
+.header{
+    margin: 3rem;
+    width: 70%;
+    min-height: 13rem;
+    max-height: 13rem;
+    @include makeGlass(24px);
+    display: flex;
+
+    .circle-icon{
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
+        margin-right: 2rem;
+        @include makeGlass(24px);
+        @include flexCenter();
+        border-radius: 50%;
+        box-shadow: 6px 6px 29px $web-shadow;
+
+        .icon{
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    .left{
+        width: calc(100% - 10rem);
+        height: 100%;
+        overflow: hidden;
+        margin-left: 1rem;
+
+        h2{
+            margin-left: 2.5rem;
+            font-size: 30px;
+            line-height: 35px;
+            color: #F2F2F2;
+            text-shadow: -6px 2px 9px $web-text-shadow;
+        }
+        .logos{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin-right: 4rem;
+
+            *{
+                width: 70px;
+                min-height: 80px;
+                font-size: large;
+                margin: 0 auto;
+                text-align: center;
+                p{
+                    font-weight: 600;
+                    line-height: 21px;
+                    color: $white;
+                    text-shadow: -6px 2px 9px $web-text-shadow;
+                }
+            }
+        }
+    }
+}

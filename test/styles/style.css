@@ -1,0 +1,426 @@
+.bg-circle {
+  position: absolute;
+  width: 990.85px;
+  height: 990.85px;
+  background: linear-gradient(252.44deg, rgba(67, 248, 227, 0.5) 0%, rgba(59, 109, 217, 0.5) 100%);
+  -webkit-filter: blur(195px);
+          filter: blur(195px);
+  border-radius: 30px;
+}
+
+.bg-circle.top {
+  left: -71.42px;
+  top: -583px;
+  -webkit-transform: rotate(21.46deg);
+          transform: rotate(21.46deg);
+}
+
+.bg-circle.bottom {
+  left: 1250px;
+  top: 1504.29px;
+  -webkit-transform: rotate(-84.5deg);
+          transform: rotate(-84.5deg);
+}
+
+body, html {
+  background: linear-gradient(252.44deg, #43F8E3 0%, #3B6DD9 100%);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 88%;
+  height: 75%;
+  background-color: #F2F2F2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  background: linear-gradient(225.19deg, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.2) 100%);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  border-radius: 30px;
+  -webkit-transition: background 10s ease-in;
+  transition: background 10s ease-in;
+}
+
+.container .sidebar {
+  overflow: auto;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(225.19deg, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.2) 100%);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  border-radius: 30px;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.container .sidebar .info {
+  color: rgba(115, 161, 251, 0.8);
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.container .sidebar .info .name {
+  font-size: xx-large;
+  line-height: 4.3rem;
+}
+
+.container .sidebar .info .location {
+  font-size: large;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container .sidebar .info li {
+  text-align: left;
+  font-size: large;
+  line-height: 2.3;
+}
+
+.container .skills-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+}
+
+.container .skills-section .slides {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.container .skills-section .slides .slide {
+  position: absolute;
+  left: 100%;
+  opacity: 0;
+  -webkit-transition: left 2s ease-in;
+  transition: left 2s ease-in;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .skills-section .slides .slide .header {
+  margin: 3rem;
+  width: 70%;
+  min-height: 13rem;
+  max-height: 13rem;
+  background: linear-gradient(225.19deg, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.2) 100%);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .skills-section .slides .slide .header .circle-icon {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  margin-right: 2rem;
+  background: linear-gradient(225.19deg, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.2) 100%);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 6px 6px 29px #96EBE6;
+          box-shadow: 6px 6px 29px #96EBE6;
+}
+
+.container .skills-section .slides .slide .header .circle-icon .icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+.container .skills-section .slides .slide .header .left {
+  width: calc(100% - 10rem);
+  height: 100%;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.container .skills-section .slides .slide .header .left h2 {
+  margin-left: 2.5rem;
+  font-size: 30px;
+  line-height: 35px;
+  color: #F2F2F2;
+  text-shadow: -6px 2px 9px rgba(255, 0, 0, 0.5);
+}
+
+.container .skills-section .slides .slide .header .left .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 4rem;
+}
+
+.container .skills-section .slides .slide .header .left .logos * {
+  width: 70px;
+  font-size: large;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .skills-section .slides .slide .header .left .logos * p {
+  font-weight: 600;
+  line-height: 21px;
+  color: #F2F2F2;
+  text-shadow: -6px 2px 9px rgba(255, 0, 0, 0.5);
+}
+
+.container .skills-section .slides .slide .percentages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage {
+  width: 80%;
+  height: 5rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: linear-gradient(225.19deg, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.2) 100%);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  border-radius: 30px;
+  background-color: #F2F2F2;
+  opacity: 80%;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage .logo {
+  width: 56px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage .progress-bar {
+  width: 80%;
+  height: 70%;
+  margin-right: 1rem;
+  background: linear-gradient(252.44deg, #43F8E3 0%, #3B6DD9 100%);
+  border-radius: 40px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #css::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 40%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #html::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 30%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #react::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 65%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #js::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 25%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #c::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 50%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #java::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 20%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #python::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 65%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #sqlite::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 65%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .slide .percentages .skill-percentage #mongo::after {
+  content: '';
+  display: block;
+  float: right;
+  background-color: #c4c4c4;
+  width: 65%;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.container .skills-section .slides .active {
+  left: 0;
+  opacity: 1;
+}
+
+.container .right-arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.container .right-arrow:hover {
+  -webkit-filter: drop-shadow(-1.5px 2px 3.5px rgba(255, 0, 0, 0.5));
+          filter: drop-shadow(-1.5px 2px 3.5px rgba(255, 0, 0, 0.5));
+}
+
+.container .left-arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.container .left-arrow:hover {
+  -webkit-filter: drop-shadow(1.5px 2px 3.5px rgba(255, 0, 0, 0.5));
+          filter: drop-shadow(1.5px 2px 3.5px rgba(255, 0, 0, 0.5));
+}
+/*# sourceMappingURL=style.css.map */

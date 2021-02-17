@@ -1,0 +1,58 @@
+.percentages{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+    .skill-percentage{
+        width: 80%;
+        height: 5rem;
+        margin: auto;
+        @include flexCenter();
+        justify-content: space-around;
+        @include makeGlass();
+        background-color: $white;
+        opacity: 80%;
+
+        .logo{
+            width: 56px;
+        }
+        .progress-bar{
+            width: 80%;
+            height: 70%;
+            margin-right: 1rem;
+            background: linear-gradient(252.44deg, #43F8E3 0%, #3B6DD9 100%);
+            border-radius: 40px;
+
+            
+        }
+        #css::after{
+            @include makeProgressBarBg(100% - $css-percentage);
+        }
+        #html::after{
+            @include makeProgressBarBg(100% - $html-percentage);
+        }
+        #react::after{
+            @include makeProgressBarBg(100% - $react-percentage);
+        }
+        #js::after{
+            @include makeProgressBarBg(100% - $js-percentage);
+        }
+        #c::after{
+            @include makeProgressBarBg(100% - $c-percentage)
+        }
+        #java::after{
+            @include makeProgressBarBg(100% - $java-percentage)
+        }
+        #python::after{
+            @include makeProgressBarBg(100% - $python-percentage)
+        }
+        #sqlite::after{
+            @include makeProgressBarBg(100% - $sqlite-percentage)
+        }
+        #mongo::after{
+            @include makeProgressBarBg(100% - $mongo-percentage)
+        }        
+    }
+}

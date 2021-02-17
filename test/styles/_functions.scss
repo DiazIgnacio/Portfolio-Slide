@@ -1,0 +1,20 @@
+@mixin flexCenter($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+@mixin makeGlass ($blur : 24px){
+    background: linear-gradient(225.19deg, $light-white-glass 0%, $dark-white-glass 100%);
+    backdrop-filter: blur($blur);
+    border-radius: 30px;
+}
+@mixin makeProgressBarBg($width) {
+    content: '';
+    display: block;
+    float: right;
+    background-color: $progress-bar-bg;
+    width: $width;
+    height: 100%;
+    border-radius: 0px 40px 40px 0px;
+}

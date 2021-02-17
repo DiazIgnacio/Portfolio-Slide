@@ -1,0 +1,52 @@
+@import './variables';
+@import './functions';
+@import './background';
+
+body, html {
+    background: linear-gradient(252.44deg, $linear-gradient-light-blue 0%, $linear-gradient-dark-blue 100%);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    @include flexCenter();
+}
+
+.container {
+    width: 88%;
+    height: 75%;
+    background-color: $white;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    @include makeGlass(60px);
+    transition: background 10s ease-in;
+    
+    @import './sidebar';
+    
+    .skills-section {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        @import './slides';
+    }
+
+    .right-arrow{
+        align-self: center;
+        margin-right: 1.5rem;
+        cursor: pointer;
+        order: 3;
+        &:hover{
+            filter: drop-shadow( -1.5px 2px 3.5px $web-text-shadow);
+        }
+    }
+    .left-arrow{
+        align-self: center;        
+        margin-left: 1.5rem;
+        cursor: pointer;
+        order: 1;
+        &:hover{
+            filter: drop-shadow( 1.5px 2px 3.5px $web-text-shadow);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.bg-circle {
+    position: absolute;
+    width: 990.85px;
+    height: 990.85px;
+    background: linear-gradient(252.44deg, rgba(67, 248, 227, 0.5) 0%, rgba(59, 109, 217, 0.5) 100%);
+    filter: blur(195px);
+    border-radius: 30px;
+
+    &.top {
+        left: -71.42px;
+        top: -583px;
+        transform: rotate(21.46deg);
+    }
+
+    &.bottom {
+        left: 1250px;
+        top: 1504.29px;
+        transform: rotate(-84.5deg);
+    }
+}
