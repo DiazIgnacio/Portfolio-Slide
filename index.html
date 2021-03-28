@@ -17,9 +17,35 @@
 
 <body>
 
+    <style>
+        .responsive-error-message{
+            opacity: 0;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 1.35rem;
+            color: white;
+            font-weight: bolder;
+            z-index: 99;
+            text-shadow: -3px -1px 4px rgb(40, 102, 146);
+        }
+
+        @media (max-width:1600px) {
+            .container{
+                display: none;
+            }
+            .responsive-error-message{
+                opacity: 1;
+            }
+        }
+    </style>
+
     <!-- Backrgound Circles -->
     <div class="bg-circle top"></div>
     <div class="bg-circle bottom"></div>
+
+    <div class="responsive-error-message">
+        I'm Working on making this app responsive <br> Please come back later or try on a larger screen.
+    </div>
 
     <div class="container">
         <div class="sidebar"></div>
